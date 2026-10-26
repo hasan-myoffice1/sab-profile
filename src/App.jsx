@@ -1,6 +1,7 @@
 import About from "./components/About";
 import Header from "./components/header";
 import Services from "./components/Services";
+import Skills from "./components/Skills";
 
 function App() {
 
@@ -10,6 +11,7 @@ function App() {
       <Header />
       <About/>
       <Services/>
+      <Skills/>
     </>
   )
 }
