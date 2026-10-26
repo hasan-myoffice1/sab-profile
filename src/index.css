@@ -25,14 +25,18 @@
     margin-inline: auto;
   }
   .title-1 {
-    @apply text-2xl text-gray-800 font-bold font-primary;
-  }
-  .para {
-    @apply text-xl leading-7 text-gray-700 font-secondary;
+    @apply text-2xl font-bold ;
   }
 
   .circle-animation {
     @apply hover:scale-110 transition-transform duration-[0.4s];
+  }
+
+  h2, h3, h4 {
+    @apply text-gray-800 font-primary;
+  }
+  p{
+    @apply text-gray-600 text-xl leading-7 font-secondary;
   }
 
 }

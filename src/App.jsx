@@ -1,5 +1,6 @@
-import About from "./components/About"
-import Header from "./components/Header"
+import About from "./components/About";
+import Header from "./components/header";
+import Services from "./components/Services";
 
 function App() {
 
@@ -8,6 +9,7 @@ function App() {
     <>
       <Header />
       <About/>
+      <Services/>
     </>
   )
 }
