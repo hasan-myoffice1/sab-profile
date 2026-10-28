@@ -1,4 +1,5 @@
 import About from "./components/About";
+import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Projects from "./components/Projects";
 import Services from "./components/Services";
@@ -14,6 +15,8 @@ function App() {
       <Services/>
       <Skills/>
       <Projects/>
+      <p className="text-center my-10 text-gray-300">Next section Coming Soon.....</p>
+      <Footer/>
     </>
   )
 }
