@@ -46,3 +46,25 @@
   }
 
 }
+
+@layer components {
+  .accordion-panel {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 300ms ease;
+  }
+
+  .accordion-panel[data-open="true"] {
+    grid-template-rows: 1fr;
+  }
+
+  .accordion-panel > div {
+    min-height: 0;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .accordion-panel {
+      transition: none;
+    }
+  }
+}

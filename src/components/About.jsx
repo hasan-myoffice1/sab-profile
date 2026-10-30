@@ -1,4 +1,5 @@
 import Button from "./Button";
+import tea from '/public/tea.png';
 // import { useEffect, useRef, useState } from "react";
 
 const About = () => {
@@ -29,7 +30,7 @@ const About = () => {
             // ref={sectionRef}
             id="about"
             // className={`section-p relative min-h-screen transition-opacity duration-700 ${isVisible ? "opacity-100" : "opacity-0"}`}
-            className={`section-p relative min-h-screen transition-opacity duration-700`}
+            className={`section-p transition-opacity duration-700`}
         >
             <div className="content-area grid md:grid-cols-2 px-5 overflow-visible">
                 <div>
@@ -62,7 +63,7 @@ const About = () => {
                         <div className="w-100 absolute left-0 bottom-0 -translate-x-100  group-hover:translate-x-5 transform-all duration-300">
                              <p className="w-max rounded-full border-primary-100 bg-primary-100 px-6 py-2.5 font-semibold uppercase shadow-[2px_3px_4px_rgba(0,0,0,0.2)] hover:scale-105 transition-transform duration-300">Hello</p>
                              <p className="w-max rounded-full border-primary-100 bg-primary-100 px-6 py-2.5 font-semibold uppercase shadow-[2px_3px_4px_rgba(0,0,0,0.2)] hover:scale-105 transition-transform duration-300 mt-2">Give me your 30 mins</p>
-                            <img src="public/tea.png" alt="" className="w-full  object-cover" />
+                            <img src={tea} alt="" className="w-full  object-cover" />
                         </div>
                     </div>
                 </div>
