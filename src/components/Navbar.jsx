@@ -1,4 +1,3 @@
-
 import links from "./navLinks";
 
 const Navbar = ({ active, mobile = false, onNavigate }) => {

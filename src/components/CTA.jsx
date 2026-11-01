@@ -1,5 +1,5 @@
 import Button from './Button';
-import tea from '/public/tea.png';
+import tea from '/tea.png';
 
 const contactMeButton = {
         link:'#contact',

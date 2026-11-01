@@ -1,6 +1,6 @@
 import { useState } from "react";
 import SectionHeader from "./SectionHeader";
-import faqImg from '/public/faq.jpg';
+import faqImg from '/faq.jpg';
 
 const data = {
     'title':"Frequently asked questions about our services",
