@@ -6,6 +6,7 @@ import Projects from "./components/Projects";
 import Services from "./components/Services";
 import Skills from "./components/Skills";
 import CTA from "./components/CTA";
+import Process from "./components/Process";
 
 function App() {
 
@@ -15,8 +16,9 @@ function App() {
       <Header />
       <About/>
       <Services/>
-      <Skills/>
       <Projects/>
+      <Skills/>
+      <Process/>
       <FAQ/>
       <CTA/>
       <p className="text-center my-10 text-gray-300">Next section Coming Soon.....</p>
