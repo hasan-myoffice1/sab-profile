@@ -7,6 +7,8 @@ import Services from "./components/Services";
 import Skills from "./components/Skills";
 import CTA from "./components/CTA";
 import Process from "./components/Process";
+// import Lab from "./components/Lab";
+// import { motion } from "motion/react"
 
 function App() {
 
@@ -14,6 +16,7 @@ function App() {
   return (
     <>
       <Header />
+      {/* <Lab/> */}
       <About/>
       <Services/>
       <Projects/>
@@ -23,6 +26,7 @@ function App() {
       <CTA/>
       <p className="text-center my-10 text-gray-300">Next section Coming Soon.....</p>
       <Footer/>
+      <a href="/" className="size-10 border-2 border-primary-40 rounded-full shadow-xl fixed bottom-10 right-10  flex justify-center align-middle text-2xl animate-bounce">↑</a> 
     </>
   )
 }

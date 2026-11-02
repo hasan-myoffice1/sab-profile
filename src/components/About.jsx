@@ -1,5 +1,6 @@
 import Button from "./Button";
 import tea from '/tea.png';
+import { motion } from "motion/react";
 // import { useEffect, useRef, useState } from "react";
 
 const About = () => {
@@ -30,36 +31,48 @@ const About = () => {
             // ref={sectionRef}
             id="about"
             // className={`section-p relative min-h-screen transition-opacity duration-700 ${isVisible ? "opacity-100" : "opacity-0"}`}
-            className={`section-p transition-opacity duration-700`}
+            className={`section-p transition-opacity duration-700 sticky`}
         >
             <div className="content-area grid md:grid-cols-2 px-5 overflow-visible">
                 <div>
                     <svg viewBox="0 0 424 440" className="w-full overflow-visible" aria-hidden="true">
                         <g fill="#11dcea" fillOpacity="0.4">
-                        <circle cx="262" cy="143" r="131" className="circle-animation"/>
-                        <circle cx="143.5" cy="223" r="131" className="circle-animation" />
-                        <circle cx="291.5" cy="273" r="131" className="circle-animation" />
+                        <motion.circle cx="262" cy="143" r="131"
+                          initial={{opacity:0, scale:0}}
+                          whileInView={{opacity:1,scale:1}} 
+                        className="circle-animation"/>
+                        <motion.circle cx="143.5" cy="223" r="131" 
+                          initial={{opacity:0, scale:0}}
+                          whileInView={{opacity:1,scale:1}}
+                        className="circle-animation" />
+                        <motion.circle cx="291.5" cy="273" r="131" 
+                          initial={{opacity:0, scale:0}}
+                          whileInView={{opacity:1,scale:1}}
+                        className="circle-animation" />
                         </g>
                         <g fontFamily="Duru Sans, sans-serif" fontSize="28" fontWeight="700" fill="#000" textAnchor="middle" stroke="#000" strokeWidth="0.6">
-                        <text x="276" y="109">code</text>
-                        <text x="86" y="243">design</text>
-                        <text x="309" y="317">seo</text>
+                        <motion.text x="276" y="109" initial={{opacity:0}} whileInView={{opacity:1}}>code</motion.text>
+                        <motion.text x="86" y="243" initial={{opacity:0}} whileInView={{opacity:1}}>design</motion.text>
+                        <motion.text x="309" y="317" initial={{opacity:0}} whileInView={{opacity:1}}>seo</motion.text>
                         </g>
                     </svg>
                 </div>
                 <div className="flex flex-col justify-center p-0 md:ps-20">
-                    <h2 className="title-1"> I am a dedicated web developer based in Bangladesh.</h2>
-                    <p className="para mt-4">
+                    <motion.h2 
+                      initial={{opacity:0, scale:0.5}} whileInView={{opacity:1, scale:1}} transition={{delay:0.4, duration:0.5}}  viewport={{ once: true }}
+                    className="title-1"> I am a dedicated web developer based in Bangladesh.</motion.h2>
+                    <motion.p initial={{opacity:0}} whileInView={{opacity:1}} transition={{duration:0.7}} className="para mt-4">
                          I specialize in building modern, responsive, and user-friendly websites
                         and web applications. My focus is on writing clean code, creating intuitive UI/UX, and delivering reliable solutions that help businesses grow online.
-                    </p>
-                    <p className="para mt-4">
+                    </motion.p>
+                    <motion.p initial={{opacity:0}} whileInView={{opacity:1}} transition={{duration:0.7}} className="para mt-4">
                         I enjoy solving real-world problems through technology and continuously
                         improving my skills by learning new tools, frameworks, and industry best
                         practices.
-                    </p>
+                    </motion.p>
                     <div className="mt-4 group">
-                        <Button info={contactMeButton}  />
+                        <motion.div initial={{x:-100}} whileInView={{x:0}} viewport={{ once: true }}><Button info={contactMeButton}  /></motion.div>
+
                         <div className="w-100 absolute left-0 bottom-0 -translate-x-100  group-hover:translate-x-5 transform-all duration-300">
                              <p className="w-max rounded-full border-primary-100 bg-primary-100 px-6 py-2.5 font-semibold uppercase shadow-[2px_3px_4px_rgba(0,0,0,0.2)] hover:scale-105 transition-transform duration-300">Hello</p>
                              <p className="w-max rounded-full border-primary-100 bg-primary-100 px-6 py-2.5 font-semibold uppercase shadow-[2px_3px_4px_rgba(0,0,0,0.2)] hover:scale-105 transition-transform duration-300 mt-2">Give me your 30 mins</p>
