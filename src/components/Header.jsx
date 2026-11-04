@@ -1,6 +1,7 @@
 import Navbar from "./Navbar";
 import links from "./navLinks";
 import { useEffect, useState } from "react";
+import SideNav from './SideNav';
 
 const Header = () => {
     const [open, setOpen] = useState(false);
@@ -56,6 +57,9 @@ const Header = () => {
                         />
                     </div>
                 )}
+            </div>
+            <div className="hidden xl:block fixed top-50 right-20 md:w-30 border-l-3 py-3 border-gray-300">
+                <SideNav  active={active}/>
             </div>
         </header>
     );
