@@ -8,7 +8,6 @@ import Skills from "./components/Skills";
 import CTA from "./components/CTA";
 import Process from "./components/Process";
 import Hero from "./components/Hero";
-// import Lab from "./components/Lab";
 // import { motion } from "motion/react"
 
 function App() {
