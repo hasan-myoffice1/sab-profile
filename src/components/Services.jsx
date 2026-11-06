@@ -28,8 +28,7 @@ const Services = () => {
                     <div className="grid grid-cols-1 gap-10 sm:gap-5 md:grid-cols-2 lg:grid-cols-3">
 
                         <motion.div 
-                         initial={{x:-1000, opacity:0 }} whileInView={{x:0, opacity:1}} transition={{duration:0.5}}  viewport={{once:true}}
-                        className="lg:col-span-2">
+                         initial={{x:-1000, opacity:0 }} whileInView={{x:0, opacity:1}} transition={{duration:1}} className="lg:col-span-2">
                             <div className="flex flex-col gap-6 rounded-3xl border-l border-t border-gray-100 p-6 shadow-xl sm:p-8 lg:flex-row lg:items-center lg:gap-10 lg:p-12 group">
 
                                 <div className={`"flex-1" ${cardHover.div}`}>
@@ -44,9 +43,7 @@ const Services = () => {
 
                         </motion.div>
 
-                        <motion.div 
-                        initial={{y:100, opacity:0 }} whileInView={{y:0, opacity:1}} transition={{duration:0.4}}   viewport={{once:true}}
-                        >
+                        <motion.div initial={{y:100, opacity:0 }} whileInView={{y:0, opacity:1}} transition={{duration:0.4}}>
                             <div className="flex h-full flex-col rounded-3xl border-l border-t border-gray-100 p-6 shadow-xl sm:p-8 lg:p-12 group">
 
                                 <div className={cardHover.div}>
@@ -58,7 +55,7 @@ const Services = () => {
                                 </div>
                             </div>
                         </motion.div>
-                        <motion.div initial={{y:-100, opacity:0 }} whileInView={{y:0, opacity:1}} transition={{duration:0.5}} viewport={{once:true}}>
+                        <motion.div initial={{y:-100, opacity:0 }} whileInView={{y:0, opacity:1}} transition={{duration:0.5}} >
                             <div className="flex flex-col rounded-3xl border-l border-t border-gray-100 p-6 shadow-xl sm:p-8 lg:-translate-y-30 lg:p-12 group">
 
                                 <div className={cardHover.div}>
@@ -71,7 +68,7 @@ const Services = () => {
                             </div>
                         </motion.div>
                         
-                        <motion.div  initial={{x:1000, opacity:0 }} whileInView={{x:0, opacity:1}} transition={{duration:0.5}}  viewport={{once:true}}
+                        <motion.div  initial={{x:1000, opacity:0 }} whileInView={{x:0, opacity:1}} transition={{duration:0.5}}  
                          className="lg:col-span-2">
                             <div className="flex flex-col gap-6 rounded-3xl border-l border-t border-gray-100 p-6 shadow-xl sm:p-8  lg:flex-row lg:items-center lg:gap-10 lg:p-12 group">
 

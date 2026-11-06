@@ -1,3 +1,4 @@
+import { motion } from "motion/react";
 import Experience from "./Experience";
 import SectionHeader from "./SectionHeader";
 
@@ -48,14 +49,15 @@ const Skills = () => {
                    {
                     skillsData.map(([name, text,exp]) => (
                         
-                        <div className="px-5 py-6 shadow-xl rounded-2xl relative overflow-hidden touch">
+                        <motion.div initial={{opacity:0, scale:0}} whileInView={{opacity:1, scale:1}} transition={{duration:1}} 
+                        className="px-5 py-6 shadow-xl rounded-2xl relative overflow-hidden touch">
                             <div aria-hidden='true' className="absolute right-0 top-0 rounded-bl-xl h-9 w-17 bg-black/5.5"></div>
                             <div aria-hidden='true' className="absolute right-0 top-0 h-19 rounded-bl-xl w-8 bg-black/5.5"></div>
                             <Ring />
                             <h4 className="mt-2 font-semibold">{name}</h4>
                             <p className="text-sm">{text}</p>
                             <span className="text-sm text-gray-400">{exp}</span>
-                        </div>
+                        </motion.div>
                     ))
                    }
                 </div>

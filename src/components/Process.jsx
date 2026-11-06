@@ -1,3 +1,4 @@
+import { motion } from "motion/react";
 import SectionHeader from "./SectionHeader";
 
 const data = {
@@ -41,7 +42,7 @@ const Process = () => {
             <div className="content-area">
                 <SectionHeader dataSend={data}/>
                 <div className="relative">
-                    <svg aria-hidden="true" className="absolute -top-60 right-10 pointer-events-none hidden xl:block" viewBox="0 0 1153 1440" fill="none">
+                    <svg aria-hidden="true" className="absolute -top-70 right-10 pointer-events-none hidden xl:block" viewBox="0 0 1153 1440" fill="none">
                         <path d="M251 387 C279 390,366 396,417 404 C468 412,523 424,557 434 C591 444,608 454,620 464 C632 474,634 484,632 494 C630 504,622 514,607 524 C592 534,568 544,542 554 C516 564,480 574,454 584 C428 594,403 604,384 614 C365 624,353 634,342 644 C331 654,325 664,320 674 C315 684,314 696,313 704 C312 712,315 721,315 724" stroke="#19d5e6" strokeWidth="3" />
                         <path d="M315 724 C316 728,318 741,322 749 C326 757,328 766,340 774 C352 782,364 793,391 799 C418 805,466 807,500 811 C534 815,570 818,594 824 C618 830,633 836,645 849 C657 862,661 886,664 899 C667 912,665 914,665 924 C665 934,665 948,662 960 C659 972,651 988,646 999 C641 1010,639 1016,634 1024 C629 1032,624 1041,618 1049 C612 1057,608 1065,600 1074 C592 1083,578 1098,573 1103" stroke="#c9d1de" strokeWidth="2" fill="none" />
                         <circle cx="573" cy="1103" r="8" fill="#c9d2e1" />
@@ -50,11 +51,12 @@ const Process = () => {
                     <div className="flex flex-wrap justify-between">
                         {
                             steps.map((s)=>(
-                                <div className={`sm:w-[50%] sm:ps-10 xl:ps-0 xl:w-120 text-center  ${s.divClass}`} key={s.num}> 
-                                    <span className="text-[94px] font-semibold mt-50">{s.num}</span>
-                                    <h3 className="text-[24px]">{s.title}</h3>
+                                <motion.div initial={{opacity:0, scale:0}} whileInView={{opacity:1, scale:1}} transition={{duration:1}}
+                                 className={`sm:w-[50%] sm:ps-10 xl:ps-0 xl:w-120 text-center group ${s.divClass}`} key={s.num}> 
+                                    <span className="text-[70px] font-semibold mt-50 text-gray-400 group-hover:text-gray-900 duration-300">{s.num}</span>
+                                    <h3 className="text-[20px] group-hover:text-[22px] duration-300">{s.title}</h3>
                                     <p>{s.text}</p>
-                                </div>
+                                </motion.div>
                             ))
                         }
                     </div>

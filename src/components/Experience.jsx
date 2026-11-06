@@ -1,3 +1,4 @@
+import { motion } from "motion/react";
 const img = "/pexels-ken-tomita-127057-389819.jpg";
 
 const ExperiData = [
@@ -39,10 +40,10 @@ const Experience = () => {
         <div className="grid md:grid-cols-5 gap-10 mt-10">
             <div className="md:col-span-2 ">
                 
-                <div className="w-full h-50 md:h-full rounded-full border-3 border-primary-40 bg-cover bg-center bg-fixed self-center hover:scale-95 duration-200 transition-all"
+                <motion.div initial={{opacity:0}} whileInView={{opacity:1}} transition={{duration:2}} className="w-full h-50 md:h-full rounded-full border-3 border-primary-40 bg-cover bg-center bg-fixed self-center  duration-200 transition-all"
                 style={{ backgroundImage: `url("${img}")` }}
                 >
-                </div>
+                </motion.div>
                 
             </div>
             <div className="md:col-span-3">
@@ -51,9 +52,11 @@ const Experience = () => {
                     ExperiData.map(([year, title, desc,])=>(
                         <tr className="group w-full">
                             <th className="p-3 pl-10 text-gray-300 group-hover:text-primary-100 group-hover:text-xl">{year}</th>
-                            <td className="border-l border-gray-300 p-5 duration-200 group-hover:shadow-2xl rounded-2xl">
-                                <h4 className="group-hover:text-primary-100 font-semibold group-hover:text-xl duration-150">{title}</h4>
-                                <p className="text-sm text-gray-400">{desc}</p>
+                            <td className="border-l border-gray-300">
+                                <motion.div initial={{y:200, opacity:0}} whileInView={{y:0, opacity:1}} transition={{duration:1}} className="p-5 duration-200 group-hover:shadow-2xl rounded-2xl">
+                                  <h4 className="group-hover:text-primary-100 font-semibold group-hover:text-xl duration-150">{title}</h4>
+                                  <p className="text-sm text-gray-400">{desc}</p>
+                                </motion.div>
                             </td>
                         </tr>
                     ))

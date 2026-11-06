@@ -38,15 +38,15 @@ const About = () => {
                     <svg viewBox="0 0 424 440" className="w-full overflow-visible" aria-hidden="true">
                         <g fill="#11dcea" fillOpacity="0.4">
                         <motion.circle cx="262" cy="143" r="131"
-                          initial={{opacity:0, scale:0}}
+                          initial={{opacity:0, scale:0}} 
                           whileInView={{opacity:1,scale:1}} 
                         className="circle-animation"/>
                         <motion.circle cx="143.5" cy="223" r="131" 
-                          initial={{opacity:0, scale:0}}
+                          initial={{opacity:0, scale:0}} 
                           whileInView={{opacity:1,scale:1}}
                         className="circle-animation" />
                         <motion.circle cx="291.5" cy="273" r="131" 
-                          initial={{opacity:0, scale:0}}
+                          initial={{opacity:0, scale:0}} 
                           whileInView={{opacity:1,scale:1}}
                         className="circle-animation" />
                         </g>
@@ -59,13 +59,13 @@ const About = () => {
                 </div>
                 <div className="flex flex-col justify-center p-0 md:ps-20">
                     <motion.h2 
-                      initial={{opacity:0, scale:0.5}} whileInView={{opacity:1, scale:1}} transition={{delay:0.4, duration:0.5}}  viewport={{ once: true }}
+                      initial={{opacity:0,y:100}} whileInView={{opacity:1,y:0}} transition={{delay:0.4, duration:0.5}}
                     className="title-1"> I am a dedicated web developer based in Bangladesh.</motion.h2>
-                    <motion.p initial={{opacity:0}} whileInView={{opacity:1}} transition={{duration:0.7}} className="para mt-4">
+                    <motion.p initial={{opacity:0, y:100}} whileInView={{opacity:1, y:0}} transition={{duration:0.5}} className="para mt-4">
                          I specialize in building modern, responsive, and user-friendly websites
                         and web applications. My focus is on writing clean code, creating intuitive UI/UX, and delivering reliable solutions that help businesses grow online.
                     </motion.p>
-                    <motion.p initial={{opacity:0}} whileInView={{opacity:1}} transition={{duration:0.7}} className="para mt-4">
+                    <motion.p initial={{opacity:0, y:100}} whileInView={{opacity:1, y:0}} transition={{duration:0.5}} className="para mt-4">
                         I enjoy solving real-world problems through technology and continuously
                         improving my skills by learning new tools, frameworks, and industry best
                         practices.

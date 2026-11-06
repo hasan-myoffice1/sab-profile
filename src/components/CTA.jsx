@@ -1,5 +1,6 @@
 import Button from './Button';
 import tea from '/tea.png';
+import { motion } from 'motion/react';
 
 const contactMeButton = {
         link:'#contact',
@@ -21,7 +22,8 @@ const CTA = () => {
                 className="col-span-1 w-full object-cover md:h-full rounded-2xl z-1"
                 />
 
-                <div className="md:col-span-2 shadow-2xl py-10 px-6 md:p-10 rounded-2xl hover:-translate-6 duration-300 hover:border border-primary-40 group relative">
+                <motion.div initial={{x:300, opacity:0}} whileInView={{x:0, opacity:1}} transition={{duration:0.5}}
+                 className="md:col-span-2 shadow-2xl py-10 px-6 md:p-10 rounded-2xl hover:-translate-6 duration-300 hover:border border-primary-40 group relative">
                     <h2 className="title-1 group-hover:text-3xl transition-all duration-300 group-hover:text-primary-100">
                         Let's Build Something special
                     </h2>
@@ -30,7 +32,7 @@ const CTA = () => {
                         application, I'm ready to turn your ideas into exceptional digital experiences.
                     </p>
                     <Button info={contactMeButton}  />   
-                </div>
+                </motion.div>
             </div>
             </div>   
         </section>
