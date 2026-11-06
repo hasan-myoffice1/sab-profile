@@ -35,14 +35,14 @@ const FAQ = () => {
                     <span>COMMON QUESTIONS</span>
                     <SectionHeader dataSend={data}/>
                 </div>
-                <div className="grid  md:grid-cols-2 gap-10 mt-30">
-                    <div className=" relative p-5">
+                <div className="grid md:grid-cols-2 gap-10 mt-30">
+                    <div className="relative p-8">
                         <img src={faqImg} alt="" className="z-20 rounded-2xl w-full h-full " />
-                        <div aria-hidden="true" className="-z-1 rounded-[22px] border border-primary-100 h-full w-full absolute top-0 right-0  -translate-5" />
-                        <div aria-hidden="true" className="-z-1 rounded-[22px] border border-primary-100 h-full w-full absolute top-0 right-0 translate-5"/>
-                        <div aria-hidden="true" className="-z-1 rounded-[22px]  border border-primary-100 h-full w-full absolute top-0 right-0"/>
-                        <div aria-hidden="true" className="-z-1 rounded-[22px] border border-primary-100 h-full w-full absolute top-0 right-0 -translate-10"/>
-                        <div aria-hidden="true" className="-z-1 rounded-[22px] border border-primary-100 h-full w-full absolute top-0 right-0 translate-10"/>
+                        <div aria-hidden="true" className="-z-1 rounded-[22px] border border-primary-100 h-full w-full absolute top-0 right-0 -translate-4 " />
+                        <div aria-hidden="true" className="-z-1 rounded-[22px] border border-primary-100 h-full w-full absolute top-0 right-0 translate-4 "/>
+                        <div aria-hidden="true" className="z-1 rounded-[22px]  border border-primary-100 h-full w-full absolute top-0 right-0 "/>
+                        <div aria-hidden="true" className="z-1 rounded-[22px] border border-primary-100 h-full w-full absolute top-0 right-0 -translate-8 hidden md:block"/>
+                        <div aria-hidden="true" className="z-1 rounded-[22px] border border-primary-100 h-full w-full absolute top-0 right-0 translate-8 hidden md:block"/>
                     </div>
 
                     {/* Accordion */}

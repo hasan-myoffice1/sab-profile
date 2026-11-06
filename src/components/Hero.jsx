@@ -1,5 +1,5 @@
 import { motion } from 'motion/react';
-import ProfileImg from '/public/tea.png'
+import ProfileImg from '/tea.png'
 
 
 
