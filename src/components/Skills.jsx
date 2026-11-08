@@ -54,7 +54,7 @@ const Skills = () => {
                             <div aria-hidden='true' className="absolute right-0 top-0 rounded-bl-xl h-9 w-17 bg-black/5.5"></div>
                             <div aria-hidden='true' className="absolute right-0 top-0 h-19 rounded-bl-xl w-8 bg-black/5.5"></div>
                             <Ring />
-                            <h4 className="mt-2 font-semibold">{name}</h4>
+                            <h4 className="text-md mt-2 font-semibold">{name}</h4>
                             <p className="text-sm">{text}</p>
                             <span className="text-sm text-gray-400">{exp}</span>
                         </motion.div>

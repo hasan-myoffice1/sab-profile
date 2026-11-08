@@ -10,17 +10,17 @@ const Footer = () => {
                  <span className='text-gray-400'>by Saimun al Bashar</span>
             </div>
 
-            <div className="content-area grid grid-cols-3 gap-10">    
+            <div className="content-area grid grid-cols-1 gap-8 md:grid-cols-3">
                 {/* Description and contact area */}
-                <div>   
+                <div>
                     <p className='text-gray-400'> Web developer and UI/UX designer building responsive, user-friendly websites.</p>
                     <h3 className='mt-10 text-gray-300'>Contact-</h3>
-                    <p className='text-gray-500 text-md hover:text-gray-200'>saimunallbashar1912@gmail.com</p>
-                    <div className='flex gap-4 mt-5'>
-                        <div className='size-9 bg-gray-800 rounded-full'></div>
-                        <div className='size-9 bg-gray-800 rounded-full'></div>
-                        <div className='size-9 bg-gray-800 rounded-full'></div>
-                        <div className='size-9 bg-gray-800 rounded-full'></div>
+                    <p className='text-md text-gray-500 hover:text-gray-200'>saimunallbashar1912@gmail.com</p>
+                    <div className='mt-5 flex gap-4'>
+                        <div className='size-9 rounded-full bg-gray-800'></div>
+                        <div className='size-9 rounded-full bg-gray-800'></div>
+                        <div className='size-9 rounded-full bg-gray-800'></div>
+                        <div className='size-9 rounded-full bg-gray-800'></div>
                     </div>
                 </div>
 
@@ -40,18 +40,18 @@ const Footer = () => {
 
                 <div>
                     <h3 className='text-gray-300'>Payment Methods</h3>
-                    <div className='flex gap-4 mt-5'>
-                        <div className='w-15 h-10 rounded-sm bg-gray-800'></div>
-                        <div className='w-15 h-10 rounded-sm bg-gray-800'></div>
-                        <div className='w-15 h-10 rounded-sm bg-gray-800'></div>
-                        <div className='w-15 h-10 rounded-sm bg-gray-800'></div>
+                    <div className='mt-5 flex flex-wrap gap-4'>
+                        <div className='h-10 w-15 rounded-sm bg-gray-800'></div>
+                        <div className='h-10 w-15 rounded-sm bg-gray-800'></div>
+                        <div className='h-10 w-15 rounded-sm bg-gray-800'></div>
+                        <div className='h-10 w-15 rounded-sm bg-gray-800'></div>
                     </div>
                 </div>
 
             </div>
 
-            <hr className="content-area border border-gray-800 sm:block my-10"/>
-            <p className="text-center text-sm  sm:col-span-2">
+            <hr className="content-area my-10 border border-gray-800 sm:block"/>
+            <p className="text-center text-sm sm:col-span-2">
             © <span>{new Date().getFullYear()}</span> Saimun Al Bashar. All rights reserved.
             </p>
         </footer>

@@ -17,34 +17,61 @@
 }
 
 @layer base {
-  .section-p {
-    @apply py-20;
+  * {
+    box-sizing: border-box;
   }
-  .content-area{
-    max-width: min(100% - 2rem, 1100px);
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply overflow-x-hidden text-slate-800;
+  }
+
+  img,
+  svg,
+  video {
+    display: block;
+    max-width: 100%;
+  }
+
+  a {
+    @apply transition-colors duration-200;
+  }
+
+  .section-p {
+    @apply py-12 md:py-20;
+  }
+
+  .content-area {
+    max-width: min(100% - 1.5rem, 1100px);
     margin-inline: auto;
   }
+
   .title-1 {
-    @apply text-2xl font-bold ;
+    @apply text-2xl font-bold md:text-4xl;
   }
 
   .circle-animation {
-    @apply hover:scale-110 transition-transform duration-[0.4s];
+    @apply transition-transform duration-[0.4s] hover:scale-110;
   }
 
   h2, h3, h4 {
     @apply text-gray-800 font-primary;
   }
-  h3{
-    @apply text-xl font-semibold;
-  }
-  p{
-    @apply text-gray-600 text-xl leading-7 font-secondary;
-  }
-  .touch {
-    @apply hover:scale-105 transition-transform duration-[0.4s] ;
+
+  h3 {
+    @apply text-xl font-semibold md:text-2xl;
   }
 
+  p {
+    @apply text-base leading-7 text-gray-600 font-secondary md:text-xl;
+  }
+
+  .touch {
+    @apply transition-transform duration-[0.4s] hover:scale-105;
+  }
 }
 
 @layer components {
