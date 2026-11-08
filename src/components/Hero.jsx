@@ -1,5 +1,5 @@
 import { motion } from 'motion/react';
-import ProfileImg from '/tea.png'
+import ProfileImg from '/profile.jfif'
 
 
 
@@ -8,7 +8,10 @@ const Hero = () => {
         <section id="home" className="section-p h-screen">
             <div className="content-area pt-10 hidden md:block">
                  <figure className='relative m-auto border-2 border-primary-40 h-90 w-70 rounded-2xl hover:scale-110 transition-all'>
-                     <motion.img initial={{scale:0}} animate={{scale:1}} src={ProfileImg} alt="profile picture " className='' />
+                     <div className='overflow-hidden rounded-2xl h-full'>
+                        <motion.img initial={{scale:0}} animate={{scale:1}} src={ProfileImg} alt="profile picture " className='cover' />
+                     </div>
+                     
                      <div className='absolute -top-7 -right-45 bg-white px-2'>
                         <motion.div initial={{x:-300}} animate={{x:0}} transition={{duration:1}} className='text-gray-500'>hello, i am</motion.div>
                         <motion.h2 initial={{x:-300}} animate={{x:0}} transition={{duration:0.6}} className='text-4xl font-bold uppercase'>Saimun Al <br/> <span className='text-primary-100'>Bashar</span></motion.h2>

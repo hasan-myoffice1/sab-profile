@@ -25,6 +25,10 @@ function App() {
   
       <Footer/>
       <a href="/" className="size-10 border-2 border-primary-40 rounded-full shadow-xl fixed bottom-10 right-10  flex justify-center align-middle text-2xl animate-bounce">↑</a> 
+      <div className="fixed bottom-10 left-10 justify-center text-2xl hover:opacity-0 duration-800" title="It Service Company">
+         <p className="text-gray-400"><span>[!]</span><span>White</span><span>pixel</span></p>
+         <p className="text-[15px] text-gray-300">Saimun Al bashar</p>
+      </div>
     </>
   )
 }
