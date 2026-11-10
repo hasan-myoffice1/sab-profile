@@ -36,8 +36,27 @@ const Header = () => {
                         <path d="M12 3 3 11h2.5v9h4.5v-6h4v6h4.5v-9H21z" />
                     </svg>
                 </Link>
+                 <video
+                    className="pointer-events-none top-10 left-145 fixed z-0 h-auto  object-center"
+                    src="/flying%20bird.webm"
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    aria-hidden="true"
+                />
 
-                <Navbar active={active} />
+                <Navbar />
+                
+                <video
+                    className="pointer-events-none top-10 right-130 fixed z-0 h-auto  object-center"
+                    src="/flying%20bird.webm"
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    aria-hidden="true"
+                />
 
                 <div className="flex items-center gap-2">
                     <Link
@@ -63,14 +82,13 @@ const Header = () => {
                 {open && (
                     <div className="w-full md:hidden">
                         <Navbar
-                            active={active}
                             mobile
                             onNavigate={() => setOpen(false)}
                         />
                     </div>
                 )}
             </div>
-            <div className="hidden xl:block fixed top-50 right-20 md:w-30 border-l-3 py-3 border-gray-300">
+            <div className="hidden xl:block fixed top-70 right-0 md:w-30">
                 <SideNav active={active} />
             </div>
         </header>

@@ -48,13 +48,13 @@ const Process = () => {
                         <circle cx="573" cy="1103" r="8" fill="#c9d2e1" />
                     </svg>
 
-                    <div className="flex flex-wrap justify-between">
+                    <div className="flex flex-wrap justify-between ">
                         {
                             steps.map((s)=>(
                                 <motion.div initial={{opacity:0, scale:0}} whileInView={{opacity:1, scale:1}} transition={{duration:1}}
-                                 className={`sm:w-[50%] sm:ps-10 xl:ps-0 xl:w-120 text-center group ${s.divClass}`} key={s.num}> 
+                                 className={`sm:w-[50%] sm:ps-10 xl:ps-0 xl:w-120 text-center group ${s.divClass} hover:scale-105 duration-200`} key={s.num}> 
                                     <span className="text-[70px] font-semibold mt-50 text-gray-400 group-hover:text-gray-900 duration-300">{s.num}</span>
-                                    <h3 className="text-[20px] group-hover:text-[22px] duration-300">{s.title}</h3>
+                                    <h3 className="text-[20px] duration-300">{s.title}</h3>
                                     <p>{s.text}</p>
                                 </motion.div>
                             ))

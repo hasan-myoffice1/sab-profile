@@ -1,7 +1,7 @@
 import { useState } from "react";
 import SectionHeader from "./SectionHeader";
-import faqImg from '/faq.jpg';
-import { motion } from "motion/react";
+// import faqImg from '/faq.jpg';
+// import { motion } from "motion/react";
 
 const data = {
     'title':"Frequently asked questions about our services",
@@ -37,7 +37,7 @@ const FAQ = () => {
                     <SectionHeader dataSend={data}/>
                 </div>
                 <div className="grid md:grid-cols-2 gap-10 mt-30">
-                    <div className="relative p-8">
+                    {/* <div className="relative p-8">
                         <img src={faqImg} alt="" className="z-20 rounded-2xl w-full h-full " />
                         <motion.div  initial={{opacity:0, scale:0}} whileInView={{opacity:1, scale:1}} transition={{duration:1}}
                          aria-hidden="true" className="-z-1 rounded-[22px] border border-primary-100 h-full w-full absolute top-0 right-0 -translate-4 " />
@@ -50,6 +50,18 @@ const FAQ = () => {
                         <motion.div initial={{opacity:0, scale:0}} whileInView={{opacity:1, scale:1}} transition={{duration:1}} aria-hidden="true" className="z-1 rounded-[22px] border border-primary-100 h-full w-full absolute top-0 right-0 -translate-8 hidden md:block"/>
                         
                         <motion.div initial={{opacity:0, scale:0}} whileInView={{opacity:1, scale:1}} transition={{duration:1}} aria-hidden="true" className="z-1 rounded-[22px] border border-primary-100 h-full w-full absolute top-0 right-0 translate-8 hidden md:block"/>
+                    </div> */}
+
+                    <div>
+                        <video
+                            className="pointer-events-none h-full z-0 object-center"
+                            src="/flying%20bird.webm"
+                            autoPlay
+                            loop
+                            muted
+                            playsInline
+                            aria-hidden="true"
+                        />
                     </div>
 
                     {/* Accordion */}

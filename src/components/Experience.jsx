@@ -40,7 +40,7 @@ const Experience = () => {
         <div className="grid md:grid-cols-5 gap-10 mt-10 content-center">
             <div className="md:col-span-2 pt-20">
                 
-                <motion.div initial={{opacity:0}} whileInView={{opacity:1}} transition={{duration:2}} className="w-60 h-50 md:h-110 rounded-full border-3 border-primary-40 bg-cover bg-center bg-fixed  my-auto duration-200 transition-all"
+                <motion.div initial={{opacity:0}} whileInView={{opacity:1}} transition={{duration:2}} className="w-60 h-50 md:h-110 rounded-full border-3 border-primary-40 bg-contain bg-left bg-fixed  my-auto duration-200 transition-all bg-no-repeat"
                 style={{ backgroundImage: `url("${img}")` }}
                 >
                   <div className="h-full w-full border border-primary-100 rounded-full scale-110"></div>

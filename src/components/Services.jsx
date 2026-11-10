@@ -4,7 +4,13 @@ import seoSearchGraphIcon from "/src/assets/streamline-ultimate_seo-search-graph
 import outlineDesignServicesIcon from "/src/assets/ic_outline-design-services.svg";
 import webpageIcon  from "/src/assets/icon-park-outline_web-page.svg";
 import { motion } from 'motion/react';
+import { Link } from 'react-router-dom';
 
+const CardLink = () =>{
+    return(
+        <a href="#" className="inline-block font-secondary capitalize border border-primary-100 rounded-2xl px-4 py-1 left-5 mt-4 hover:bg-primary-100 ">About this service</a>
+    )
+}
 
 const Services = () => {
 
@@ -14,7 +20,7 @@ const Services = () => {
     }
     const cardHover = {
         'div' : 'group-hover:-translate-3 transition-all duration-300',
-        'h3' : 'text-xl font-semibold mb-3 group-hover:text-3xl transition-all duration-300 group-hover:text-primary-100'
+        'h3' : 'text-xl font-semibold mb-3 transition-all duration-300 group-hover:text-primary-100'
     }
 
 
@@ -28,39 +34,43 @@ const Services = () => {
                     <div className="grid grid-cols-1 gap-10 sm:gap-5 md:grid-cols-2 lg:grid-cols-3">
 
                         <motion.div 
-                         initial={{x:-1000, opacity:0 }} whileInView={{x:0, opacity:1}} transition={{duration:1}} className="lg:col-span-2">
+                         id="web-development" initial={{x:-200, opacity:0 }} whileInView={{x:0, opacity:1}} transition={{duration:1}} className="lg:col-span-2 scroll-mt-28">
                             <div className="flex flex-col gap-6 rounded-3xl border-l border-t border-gray-100 p-6 shadow-xl sm:p-8 lg:flex-row lg:items-center lg:gap-10 lg:p-12 group">
 
-                                <div className={`"flex-1" ${cardHover.div}`}>
+                                <div className={cardHover.div}>
                                     <h3 className={cardHover.h3}
                                      >Web Development</h3>
-                                    <p>I build responsive, scalable, and high-performance websites using modern technologies and best coding practices.</p>
+                                    <p>I build responsive, scalable, and high-performance websites using modern technologies and best coding practices.</p> 
+                                    <Link to="/web-development"><CardLink /></Link>
                                 </div>
-                                <div className="size-20 max-w-full mt-10 shrink-0 flex justify-center align-middle">
+                                
+                                <div className="size-20 max-w-full shrink-0">
                                     <img src={webpageIcon} alt="web page Icon" className=""/>
                                 </div>
                             </div>
-
+                            
                         </motion.div>
 
-                        <motion.div initial={{y:100, opacity:0 }} whileInView={{y:0, opacity:1}} transition={{duration:0.4}}>
+                        <motion.div id="ui-ux-design" initial={{y:100, opacity:0 }} whileInView={{y:0, opacity:1}} transition={{duration:0.6}} className="scroll-mt-28">
                             <div className="flex h-full flex-col rounded-3xl border-l border-t border-gray-100 p-6 shadow-xl sm:p-8 lg:p-12 group">
 
                                 <div className={cardHover.div}>
                                     <h3 className={`text-xl font-semibold mb-3 ${cardHover.h3}`}>UI/UX Designer</h3>
                                     <p>User-centered interfaces that improve engagement, usability, and overall customer experience.</p>
+                                    <Link to="/web-development"><CardLink /></Link>
                                 </div>
                                 <div className="size-20 max-w-full mt-12 shrink-0 flex justify-center align-middle">
                                     <img src={outlineDesignServicesIcon} alt="Outline Design Services Icon" className=""/>
                                 </div>
                             </div>
                         </motion.div>
-                        <motion.div initial={{y:-100, opacity:0 }} whileInView={{y:0, opacity:1}} transition={{duration:0.5}} >
+                        <motion.div id="wordpress" initial={{y:-100, opacity:0 }} whileInView={{y:0, opacity:1}} transition={{duration:0.6}} className="scroll-mt-28">
                             <div className="flex flex-col rounded-3xl border-l border-t border-gray-100 p-6 shadow-xl sm:p-8 lg:-translate-y-30 lg:p-12 group">
 
                                 <div className={cardHover.div}>
                                     <h3 className={cardHover.h3}>WordPress</h3>
                                     <p>Custom WordPress websites, theme customization, plugin setup, and performance optimization.</p>
+                                    <Link to="/web-development"><CardLink /></Link>
                                 </div>
                                 <div className="size-20 max-w-full mt-12 shrink-0 flex justify-center align-middle">
                                     <img src={wordpressIcon} alt="WordPress icon" className=""/>
@@ -68,13 +78,14 @@ const Services = () => {
                             </div>
                         </motion.div>
                         
-                        <motion.div  initial={{x:1000, opacity:0 }} whileInView={{x:0, opacity:1}} transition={{duration:0.5}}  
-                         className="lg:col-span-2">
+                        <motion.div  initial={{x:200, opacity:0 }} whileInView={{x:0, opacity:1}} transition={{duration:1}}  
+                         id="seo" className="lg:col-span-2 scroll-mt-28">
                             <div className="flex flex-col gap-6 rounded-3xl border-l border-t border-gray-100 p-6 shadow-xl sm:p-8  lg:flex-row lg:items-center lg:gap-10 lg:p-12 group">
 
-                                <div className={`text-xl font-semibold mb-3 ${cardHover.div}`}>
+                                <div className={`mb-3 ${cardHover.div}`}>
                                     <h3 className={cardHover.h3}>SEO</h3>
                                     <p>Professional Shopify store setup, theme editing, and conversion-focused design improvements.</p>
+                                    <Link to="/web-development"><CardLink /></Link>
                                 </div>
                                 <div className="size-20 mt-10 max-w-full shrink-0 flex justify-center align-middle">
                                     <img src={seoSearchGraphIcon} alt="Seo Search Graph Icon"/>
