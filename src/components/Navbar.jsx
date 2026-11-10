@@ -10,7 +10,7 @@ const navItems = [
 ];
 
 const serviceItems = [
-  { label: 'Web Development', to: '/services#web-development' },
+  { label: 'Web Development', to: '/services/web-development' },
   { label: 'WordPress', to: '/services#wordpress' },
   { label: 'UI/UX Design', to: '/services#ui-ux-design' },
   { label: 'SEO', to: '/services#seo' },
