@@ -36,7 +36,7 @@ const WebDevelopment = () => {
             <section className="section-p">
                 <div className="content-area">
                      <h1 className="title-1 text-center">Web Development</h1>
-                     <p className="text-center mt-4 m-auto w-150">I build responsive, scalable, and high-performance websites using modern technologies and best coding practices.</p>
+                     <p className="text-center mt-4 m-auto md:w-150">I build responsive, scalable, and high-performance websites using modern technologies and best coding practices.</p>
                      <div className="md:w-200 m-auto">
                         <img src={web_development_img} alt="" />
                      </div>

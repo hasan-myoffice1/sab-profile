@@ -3,7 +3,7 @@ import { useState } from 'react';
 
 const navItems = [
   // { label: 'Home', to: '/' },
-  { label: 'About', to: '/about' },
+  { label: 'About', to: '/' },
   { label: 'Services', to: '/services' },
   { label: 'Blog', to: '/blog' },
   { label: 'Contact', to: '/contact' },
@@ -11,9 +11,9 @@ const navItems = [
 
 const serviceItems = [
   { label: 'Web Development', to: '/services/web-development' },
-  { label: 'WordPress', to: '/services#wordpress' },
-  { label: 'UI/UX Design', to: '/services#ui-ux-design' },
-  { label: 'SEO', to: '/services#seo' },
+  { label: 'WordPress', to: '/services/wordpress' },
+  { label: 'UI/UX Design', to: '/services/ui-ux-design' },
+  { label: 'SEO', to: '/services/seo' },
 ];
 
 const Navbar = ({ mobile = false, onNavigate }) => {

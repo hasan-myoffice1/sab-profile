@@ -28,7 +28,7 @@ const Header = () => {
         <header className="sticky top-0 z-50 animate-[header-fade-in_500ms_ease-out_both]">
             <div className="content-area flex flex-wrap items-center justify-between gap-3 pt-5">
                 <Link
-                    to="/"
+                    to="/me"
                     aria-label="Saimun Al Bashar, home"
                     className="grid h-9 w-9 place-items-center rounded-full border-2 border-primary-100 bg-gray-50 shadow-[2px_3px_4px_rgba(0,0,0,0.2)]"
                 >

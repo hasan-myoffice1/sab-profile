@@ -5,7 +5,7 @@ import Footer from "./components/Footer";
 import { Routes, Route } from 'react-router-dom';
 import Home from "./Pages/Home";
 import Contact from "./Pages/Contact";
-import About from "./Pages/About";
+import About from "./Pages/AboutPage";
 import Blog from "./Pages/Blog";
 import MyServices from "./Pages/MyServices";
 import WebDevelopment from "./Pages/WebDevelopment";
@@ -16,10 +16,10 @@ function App() {
     <>
       <Header />
         <Routes>
-           <Route path="/" element={<Home/>}/>
+           <Route path="/me" element={<Home/>}/>
            <Route path="/contact" element={<Contact/>}/>
            <Route path="/services" element={<MyServices/>}/>
-           <Route path="/about" element={<About/>}/>
+           <Route path="/" element={<About/>}/>
            <Route path="/blog" element={<Blog/>}/>
            <Route path="/services/web-development" element={<WebDevelopment/>}/>
         </Routes>
