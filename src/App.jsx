@@ -9,6 +9,10 @@ import About from "./Pages/AboutPage";
 import Blog from "./Pages/Blog";
 import MyServices from "./Pages/MyServices";
 import WebDevelopment from "./Pages/WebDevelopment";
+import WordPress from "./Pages/WordPress";
+import UIUXDesign from "./Pages/UIUXDesign";
+import SEO from "./Pages/SEO";
+import NotFound from "./components/NotFound";
 
 function App() {
 
@@ -22,6 +26,11 @@ function App() {
            <Route path="/" element={<About/>}/>
            <Route path="/blog" element={<Blog/>}/>
            <Route path="/services/web-development" element={<WebDevelopment/>}/>
+           <Route path="/services/wordpress" element={<WordPress/>}/>
+           <Route path="/services/ui-ux-design" element={<UIUXDesign/>}/>
+           <Route path="/services/seo" element={<SEO/>}/>
+           <Route path="*" element={<NotFound/>}/>
+
         </Routes>
       {/* <Lab/> */}
 

@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 
 const CardLink = () =>{
     return(
-        <a href="#" className="inline-block font-secondary capitalize border border-primary-100 rounded-2xl px-4 py-1 left-5 mt-4 hover:bg-primary-100 ">About this service</a>
+        <span className="inline-block font-secondary capitalize border border-primary-100 rounded-2xl px-4 py-1 left-5 mt-4 hover:bg-primary-100 ">About this service</span>
     )
 }
 
@@ -41,7 +41,7 @@ const Services = () => {
                                     <h3 className={cardHover.h3}
                                      >Web Development</h3>
                                     <p>I build responsive, scalable, and high-performance websites using modern technologies and best coding practices.</p> 
-                                    <Link to="/web-development"><CardLink /></Link>
+                                    <Link to="/services/web-development"><CardLink /></Link>
                                 </div>
                                 
                                 <div className="size-20 max-w-full shrink-0">
@@ -57,7 +57,7 @@ const Services = () => {
                                 <div className={cardHover.div}>
                                     <h3 className={`text-xl font-semibold mb-3 ${cardHover.h3}`}>UI/UX Designer</h3>
                                     <p>User-centered interfaces that improve engagement, usability, and overall customer experience.</p>
-                                    <Link to="/web-development"><CardLink /></Link>
+                                    <Link to="/services/ui-ux-design"><CardLink /></Link>
                                 </div>
                                 <div className="size-20 max-w-full mt-12 shrink-0 flex justify-center align-middle">
                                     <img src={outlineDesignServicesIcon} alt="Outline Design Services Icon" className=""/>
@@ -70,7 +70,7 @@ const Services = () => {
                                 <div className={cardHover.div}>
                                     <h3 className={cardHover.h3}>WordPress</h3>
                                     <p>Custom WordPress websites, theme customization, plugin setup, and performance optimization.</p>
-                                    <Link to="/web-development"><CardLink /></Link>
+                                    <Link to="/services/wordpress"><CardLink /></Link>
                                 </div>
                                 <div className="size-20 max-w-full mt-12 shrink-0 flex justify-center align-middle">
                                     <img src={wordpressIcon} alt="WordPress icon" className=""/>
@@ -84,8 +84,8 @@ const Services = () => {
 
                                 <div className={`mb-3 ${cardHover.div}`}>
                                     <h3 className={cardHover.h3}>SEO</h3>
-                                    <p>Professional Shopify store setup, theme editing, and conversion-focused design improvements.</p>
-                                    <Link to="/web-development"><CardLink /></Link>
+                                    <p>Search engine optimization to improve your website's visibility, structure, and organic reach.</p>
+                                    <Link to="/services/seo"><CardLink /></Link>
                                 </div>
                                 <div className="size-20 mt-10 max-w-full shrink-0 flex justify-center align-middle">
                                     <img src={seoSearchGraphIcon} alt="Seo Search Graph Icon"/>
